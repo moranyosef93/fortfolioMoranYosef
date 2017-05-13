@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Moran Yosef- Fortfolio</title>
+    <meta name="description" content=".באתר זה תוכלו לצפות בתיק העבודות שלי ולהתרשם מעבודותי בתחומים השונים במסגרת לימודי טלמ.ניתן ליצור קשר או להשאיר פרטים ואחזור אליכם." />
+    <meta name="keywords" content="גרפיקה, בניית אתרים, טלמ, מכון טכנולוגי חולון, עיצוב" />
+    <meta name="author" content="Moran Yosef" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 class="center">MORAN YOSEF</h1>
+            <h2 class="center">FORTFOLIO</h2>
+            <nav class="pointer" id="m">
+                <ul class="center">
+                    <li class="marging_bo"><a href="index.html"><span style="color:#b0207d; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">עמוד הבית</span></a></li>
+                    <li class="marging_bo"><a href="odot.html">אודות</a></li>
+                    <li class="marging_bo">
+                        <a href="#">גרפיקה</a>
+                        <ul>
+                            <li><a href="postcard.html">גלויה</a></li>
+                            <li><a href="thelovers.html">פרוייקט סיום</a></li>
+                        </ul>
+                    </li>
+                    <li class="marging_bo">
+                        <a href="#">בניית אתרים</a>
+                        <ul>
+                            <li><a href="landingpage.html">דף נחיתה</a></li>
+                        </ul>
+                    </li>
+                    <li class="marging_bo"><a href="contact.html">צור קשר</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <div class="container">
+                <img class="mySlides" src="images/LandingPage_cut.jpg" width="960" height="300" style="object-fit:contain" />
+                <img class="mySlides" src="images/Postcard_cut.jpg" width="960" height="300" style="object-fit:contain">
+                <img class="mySlides" src="images/TheLovers_cut.jpg" width="960" height="300" style="object-fit:contain">
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(1)">&#10095;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(-1)">&#10094;</button>
+            </div>
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";
+                  }
+                  x[slideIndex-1].style.display = "block";
+                }
+            </script>
+        </article>
+        <footer>
+            <div id="icons">
+                <div id="instagram">
+                    <a href="https://www.instagram.com/"></a>
+                </div>
+                <div id="linkedin">
+                    <a href="https://www.linkedin.com/"></a>
+                </div>
+                <div id="twitter">
+                    <a href="https://twitter.com/?lang=he"></a>
+                </div>
+                <div id="facebook">
+                    <a href="https://www.facebook.com/moran.yosef.18"></a>
+                </div>
+            </div>
+            <div id="music">
+                <audio src="music/Cold Little Heart (Radio Edit) - Michael Kiwanuka lyrics.mp3" autoplay="autoplay" controls="controls"></audio>
+            </div>
+            <p class="center">Copyrighting © MoranYosef</p>
+        </footer>
+        
+    </div>
+</body>
+</html>
